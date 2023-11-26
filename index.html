@@ -1,0 +1,80 @@
+<!-- HTML CODE -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>ChatApp</title>
+</head>
+<body>
+  <div class="root">
+  <header>
+    <nav>
+      <div class="desktop">
+        <div class="left-align">
+          <h1 class="nav-link nav-link-primary">ChatApp</h1>
+        </div>
+        <div class="right-align">
+          <form class="sign_in_page_form hidden" onsubmit="event.preventDefault();">
+            <input type="text" class="passcode" placeholder="Enter passcode">
+            <input type="submit" value="Submit">
+          </form>
+          <h2 class="logout nav-link nav-link-secondary hidden">Logout</h2>
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="left-align">
+          <h1 class="nav-link nav-link-primary">Ephemra</h1>
+        </div>
+        <div class="right-align">  
+          <form class="sign_in_page_form hidden" onsubmit="event.preventDefault();">
+            <input type="text" class="passcode" placeholder="Enter passcode">
+            <input type="submit" value="Submit">
+          </form>
+          <h2 class="logout nav-link nav-link-secondary hidden">Logout</h2>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section class="notification_section hidden">
+        <div class="notification">
+          <p class="nav-link-secondary notification_message">Your notification message goes here</p>
+        </div>
+      </section>
+      <section class="call_out_section">
+        <div class="call_out_txt_container">
+          <h1>Welcome</h1>
+          <p>This is a chat applciation template. It can be used for whatever</p>
+        </div>
+      </section>
+      <section class="chat_section">
+        <div class="chat_container">
+          <div class="chat_messages_container">
+          </div>
+          <div class="chat_input">
+             <form id="message_form">
+              <textarea id="message_input" rows="5" placeholder="Type your message here...">what is a good introduction saw for woodworking</textarea>
+              <button type="submit" onsubmit="event.preventDefault();">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>    
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="about.html" class="nav-link nav-link-tertiary">About</a></li>
+        <li><a href="contact.html" class="nav-link nav-link-tertiary">Contact</a></li>
+        <li><a href="tos.html" class="nav-link nav-link-tertiary">Terms of Service</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
